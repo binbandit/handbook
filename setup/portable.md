@@ -48,10 +48,14 @@ The package manifest is intentionally narrow. It supports the AI workflow rather
 
 The linker never deletes an existing target. On apply:
 
-1. A correct existing symlink is left alone.
-2. A conflicting file, directory, or symlink moves to a timestamped backup.
-3. The backup preserves the target's path below `~/.bandits-handbook-backups/`.
-4. An absolute symlink points the target to the repository source.
+1. The complete manifest is validated before any mutation.
+2. Duplicate targets, missing sources, unsafe paths, and target parents that resolve outside the physical home directory stop the run.
+3. A correct existing symlink is left alone.
+4. A conflicting file, directory, or symlink moves to a timestamped backup.
+5. The backup preserves the target's path below `~/.bandits-handbook-backups/`.
+6. An absolute symlink points the target to the repository source.
+
+Apply mode also uses a lock so two syncs cannot race. If creating a link fails after its target was preserved, the linker attempts to restore that exact target before reporting the error.
 
 Preview the mapping directly:
 

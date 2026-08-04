@@ -24,10 +24,14 @@ Static links remove copy drift. Editing a managed destination edits the reposito
 ## Safety properties
 
 - Targets must stay under `$HOME`.
+- Existing target parents must resolve inside the physical home directory, so a parent symlink cannot redirect a write elsewhere.
 - Sources must stay inside the repository.
+- The entire manifest, including duplicate targets, is validated before apply mutates anything.
 - Preview is the default.
 - Apply never overwrites a collision in place.
 - Backups retain the original relative target path.
+- One apply lock prevents concurrent runs from racing over the same targets.
+- A failed link attempt restores that row's preserved target when possible.
 - An existing correct link is idempotent.
 - Check mode fails when any managed link differs.
 - Private values are not part of the public manifest.
@@ -51,6 +55,7 @@ Copying is familiar but creates two editable versions. A later sync step must gu
 ## Consequences
 
 - The link script and manifest become security-sensitive and receive explicit ownership and tests.
+- Isolated tests cover preview, backup, apply, repeat apply, full preflight, duplicate targets, and symlinked-parent containment.
 - Private work configuration needs its own private source rather than clever exceptions in the public tree.
 - Package installation remains separate from file linking.
 - The system optimizes for a focused AI setup, not every possible dotfile.
