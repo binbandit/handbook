@@ -1,0 +1,4 @@
+interface:
+  display_name: "Plan a Change"
+  short_description: "Turn complex work into an executable plan"
+  default_prompt: "Use $plan to inspect this repository and produce a concise, evidence-based implementation plan."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Use Kite"
+  short_description: "Run Kite quicksave and landing workflows"
+  default_prompt: "Use $use-kite to inspect this repository and choose the safest Kite operation for the requested workflow."

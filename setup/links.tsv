@@ -2,6 +2,7 @@
 # Sources are relative to the repository root. Targets must stay under $HOME.
 agents/global/AGENTS.md	~/AGENTS.md
 agents/global/AGENTS.md	~/.codex/AGENTS.md
+agents/global/AGENTS.md	~/.pi/agent/AGENTS.md
 agents/global/POLICY.md	~/.agents/policy.md
 dotfiles/gitconfig	~/.gitconfig
 dotfiles/config/git/ignore	~/.config/git/ignore
@@ -12,3 +13,20 @@ dotfiles/config/fish/functions/handbook-sync.fish	~/.config/fish/functions/handb
 dotfiles/config/herdr/config.toml	~/.config/herdr/config.toml
 dotfiles/config/mise/config.toml	~/.config/mise/config.toml
 dotfiles/pi/agent/settings.json	~/.pi/agent/settings.json
+skills/commit	~/.codex/skills/commit
+skills/plan	~/.codex/skills/plan
+skills/simplify	~/.codex/skills/simplify
+skills/trace	~/.codex/skills/trace
+skills/use-kite	~/.codex/skills/use-kite
+skills/commit	~/.pi/agent/skills/commit
+skills/plan	~/.pi/agent/skills/plan
+skills/simplify	~/.pi/agent/skills/simplify
+skills/trace	~/.pi/agent/skills/trace
+skills/use-codex	~/.pi/agent/skills/use-codex
+skills/use-kite	~/.pi/agent/skills/use-kite
+skills/commit	~/.claude/skills/commit
+skills/plan	~/.claude/skills/plan
+skills/simplify	~/.claude/skills/simplify
+skills/trace	~/.claude/skills/trace
+skills/use-codex	~/.claude/skills/use-codex
+skills/use-kite	~/.claude/skills/use-kite

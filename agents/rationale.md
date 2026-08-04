@@ -2,6 +2,8 @@
 
 Research last verified: 2026-08-05.
 
+See [`docs/research/agent-instructions.md`](../docs/research/agent-instructions.md) for the comparative source review behind these decisions.
+
 ## The split is deliberate
 
 The repository-root `AGENTS.md` explains how to maintain Bandit's Handbook. `agents/global/AGENTS.md` is an installable personal contract. Combining them would leak project-specific commands into every repository and make the global context larger without helping unrelated tasks.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Use Codex"
+  short_description: "Delegate bounded work through the Codex CLI"
+  default_prompt: "Use $use-codex to delegate this bounded task to Codex and return a verified report."

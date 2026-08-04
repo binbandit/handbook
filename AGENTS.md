@@ -20,11 +20,12 @@ Bandit's Handbook documents Brayden's AI operating system and distributes its po
 ## Repository map
 
 - `agents/`: portable instruction files and design rationale.
+- `harnesses/`: canonical guides for the agent runtimes Brayden uses.
 - `skills/`: reusable procedures loaded only when relevant.
 - `dotfiles/`: the small set of AI-enabling configuration worth syncing.
 - `setup/`: auditable link and package manifests.
 - `playbooks/`: end-to-end AI working loops.
-- `tools/`: canonical guide sources for harnesses and agent-facing tools.
+- `tools/`: canonical guides for tools that extend an agent's reach.
 - `docs/`: architecture, research, and decision records.
 - `app/`: website routes and presentation.
 - `public/`: static website assets.

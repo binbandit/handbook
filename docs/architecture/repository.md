@@ -14,9 +14,10 @@ Portable shell and Git configuration exists only in support of those layers. Thi
 ## Source-of-truth rules
 
 - Agent behavior starts in `agents/` or the nearest repository `AGENTS.md`.
+- Harness guides start in `harnesses/`.
 - Repeatable specialist procedures start in `skills/`.
 - End-to-end AI working loops start in `playbooks/`.
-- Harness and agent-tool guides start in `tools/`.
+- Agent-tool guides start in `tools/`.
 - The small amount of AI-enabling machine configuration starts in `dotfiles/`.
 - Device link intent starts in `setup/links.tsv`.
 - Long-form evidence and decisions start in `docs/`.
@@ -38,9 +39,13 @@ Git, GitHub, Fish, and aliases appear inside those journeys as collaboration int
 
 ## Growth rules
 
-### Add a harness or agent-facing tool
+### Add a harness
 
-Create `tools/<slug>.md` with outcome, why Brayden uses it, when to use it, when not to use it, install, configuration, verification, update, rollback, uninstall, security boundary, tested version, and primary sources.
+Create `harnesses/<slug>.md` with outcome, why Brayden uses it, when to use it, when not to use it, install, configuration, verification, update, rollback, uninstall, security boundary, tested version, and primary sources.
+
+### Add an agent-facing tool
+
+Create `tools/<slug>.md` with the same evidence standard. Explain which harness capability the tool extends and what new trust boundary it introduces.
 
 Clearly label whether Brayden actively uses the tool, is experimenting with it, or is sharing it for awareness.
 

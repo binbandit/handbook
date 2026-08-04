@@ -1,0 +1,4 @@
+interface:
+  display_name: "Simplify Changed Code"
+  short_description: "Reduce complexity without changing behavior"
+  default_prompt: "Use $simplify to refine the recent changes while preserving behavior and repository conventions."

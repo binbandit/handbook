@@ -2,9 +2,8 @@
 
 # Changes here can alter installation, publication, or repository security.
 /.github/ @binbandit
-/mimic.toml @binbandit
 /scripts/ @binbandit
 /agents/ @binbandit
+/harnesses/ @binbandit
 /skills/ @binbandit
 /dotfiles/ @binbandit
-/templates/ @binbandit

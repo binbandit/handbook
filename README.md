@@ -19,6 +19,9 @@ This is not a tour of an entire developer environment. Terminal and Git material
 ## Start here
 
 - Read the handbook website for the guided path.
+- Start with [`harnesses/codex.md`](harnesses/codex.md) for Brayden's primary delivery harness.
+- Read [`harnesses/pi.md`](harnesses/pi.md) for the malleable terminal harness.
+- See [`tools/herdr.md`](tools/herdr.md) and [`tools/kite.md`](tools/kite.md) for the control and Git layers.
 - Open [`agents/global/AGENTS.md`](agents/global/AGENTS.md) for Brayden's portable global agent contract.
 - Read [`agents/rationale.md`](agents/rationale.md) for the research and tradeoffs behind it.
 - Browse [`skills/`](skills/) for reusable capabilities.
@@ -30,9 +33,10 @@ This is not a tour of an entire developer environment. Terminal and Git material
 ```text
 .
 ├── agents/       Installable instructions and their rationale
+├── harnesses/    Agent runtimes and their operating models
 ├── skills/       Task-specific capabilities for AI agents
 ├── playbooks/    End-to-end ways of working with AI
-├── tools/        Guide sources for harnesses and agent-facing tools
+├── tools/        Tools that extend what agents can observe and do
 ├── dotfiles/     The small set of AI-enabling config worth syncing
 ├── setup/        Auditable link and package manifests
 ├── docs/         Architecture, research, and decision records

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Trace a Flow"
+  short_description: "Follow code and data from trigger to result"
+  default_prompt: "Use $trace to follow this flow through the codebase and cite the implementation evidence."

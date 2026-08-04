@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create Intentional Commits"
+  short_description: "Stage and commit logical changes safely"
+  default_prompt: "Use $commit to inspect the working tree and create atomic Conventional Commits for the authorized changes."
