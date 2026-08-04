@@ -1,0 +1,12 @@
+.DS_Store
+.idea/
+.vscode/settings.local.json
+*.swp
+*.swo
+*~
+
+# Local agent state
+**/.claude/settings.local.json
+**/.claude/.cc-writes/
+**/.codex/
+**/.pi/sessions/

@@ -1,0 +1,14 @@
+# Source path, then target path, separated by one tab.
+# Sources are relative to the repository root. Targets must stay under $HOME.
+agents/global/AGENTS.md	~/AGENTS.md
+agents/global/AGENTS.md	~/.codex/AGENTS.md
+agents/global/POLICY.md	~/.agents/policy.md
+dotfiles/gitconfig	~/.gitconfig
+dotfiles/config/git/ignore	~/.config/git/ignore
+dotfiles/config/fish/config.fish	~/.config/fish/config.fish
+dotfiles/config/fish/conf.d/00-init.fish	~/.config/fish/conf.d/00-init.fish
+dotfiles/config/fish/conf.d/10-abbr.fish	~/.config/fish/conf.d/10-abbr.fish
+dotfiles/config/fish/functions/handbook-sync.fish	~/.config/fish/functions/handbook-sync.fish
+dotfiles/config/herdr/config.toml	~/.config/herdr/config.toml
+dotfiles/config/mise/config.toml	~/.config/mise/config.toml
+dotfiles/pi/agent/settings.json	~/.pi/agent/settings.json

@@ -1,0 +1,4 @@
+# Portable defaults only. Project trust, credentials, and private endpoints are
+# intentionally local and are not linked by the public setup manifest.
+model = "gpt-5.6-sol"
+model_reasoning_effort = "high"

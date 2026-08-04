@@ -1,0 +1,10 @@
+# Brayden's explicit Herdr preferences. Everything else follows Herdr defaults.
+
+[theme]
+name = "rose-pine"
+
+[keys]
+prefix = "`"
+
+[experimental]
+pane_history = false

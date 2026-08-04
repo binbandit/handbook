@@ -1,0 +1,11 @@
+# Agent command surface
+brew "fish"
+brew "fzf"
+brew "ripgrep"
+brew "fd"
+brew "jq"
+brew "gh"
+
+# Harness runtime and agent tooling
+brew "mise"
+brew "herdr"

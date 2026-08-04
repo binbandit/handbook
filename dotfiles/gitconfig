@@ -1,0 +1,67 @@
+[include]
+	path = ~/.config/git/local.conf
+
+[user]
+	useConfigOnly = true
+
+[credential "https://github.com"]
+	helper =
+	helper = !gh auth git-credential
+
+[credential "https://gist.github.com"]
+	helper =
+	helper = !gh auth git-credential
+
+[init]
+	defaultBranch = main
+
+[pull]
+	rebase = true
+
+[push]
+	autoSetupRemote = true
+
+[fetch]
+	prune = true
+
+[core]
+	editor = nvim
+	autocrlf = input
+	excludesfile = ~/.config/git/ignore
+
+[color]
+	ui = auto
+
+[merge]
+	conflictstyle = zdiff3
+
+[rerere]
+	enabled = true
+	autoupdate = false
+
+[branch]
+	sort = -committerdate
+
+[tag]
+	sort = version:refname
+
+[diff]
+	algorithm = histogram
+	colorMoved = default
+
+[commit]
+	verbose = true
+
+[rebase]
+	autosquash = true
+	autostash = true
+
+[help]
+	autocorrect = prompt
+
+[alias]
+	lg = log --graph --date=relative --pretty=format:'%C(auto)%h%d %s %C(dim white)(%ar, %an)%C(reset)'
+	last = log -1 --stat
+	st = status --short --branch
+	switch = switch
+	restore = restore
